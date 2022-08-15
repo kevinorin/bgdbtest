@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_genre_genres",
+  "info": {
+    "displayName": "genre",
+    "icon": "gamepad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "Adventure",
+        "Arcade",
+        "Card & Board",
+        "Fighting",
+        "Hack n Slash/Beat 'em Up",
+        "Indie",
+        "Multiplayer Online Role-playing (MMORPG)",
+        "Music",
+        "Mutiplayer Online Battle Arena (MOBA)",
+        "Pinball",
+        "Platform",
+        "Point-and-Click",
+        "Puzzle",
+        "PVP Brawler",
+        "Quiz/Trivia",
+        "Racing",
+        "Real-Time Strategy (RTS)",
+        "Role-playing (RPG)",
+        "Rougelite",
+        "Shooter",
+        "Simulator",
+        "Sport",
+        "Strategy",
+        "Tactical",
+        "Tower Defense",
+        "Turn-based Strategy (TBS)",
+        "Visual Novel"
+      ]
+    }
+  }
+}

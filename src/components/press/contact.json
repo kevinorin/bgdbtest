@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_press_contacts",
+  "info": {
+    "displayName": "contact",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

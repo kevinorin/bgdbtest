@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_press_videos",
+  "info": {
+    "displayName": "videos",
+    "icon": "video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

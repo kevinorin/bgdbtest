@@ -1,0 +1,117 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blockchain_games",
+  "info": {
+    "singularName": "blockchain-game",
+    "pluralName": "blockchain-games",
+    "displayName": "Blockchain Game",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "developers": {
+      "type": "string",
+      "required": true
+    },
+    "publishers": {
+      "type": "string",
+      "required": true,
+      "default": "Gala",
+      "unique": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "supportingDevelopers": {
+      "type": "string"
+    },
+    "modes": {
+      "type": "enumeration",
+      "enum": [
+        "Battle Royale",
+        "Co-operative",
+        "Massively Multiplayer Online (MMO)",
+        "Multiplayer",
+        "Single Player",
+        "Split Screen"
+      ]
+    },
+    "perspectives": {
+      "type": "enumeration",
+      "enum": [
+        "Auditory",
+        "Augmented Reality (AR)",
+        "Bird View / Isometeic",
+        "First Person",
+        "Side View",
+        "Test",
+        "Third Person",
+        "Virtual Reality (VR)"
+      ]
+    },
+    "gameEngine": {
+      "type": "string"
+    },
+    "alternativeNames": {
+      "type": "string"
+    },
+    "esrbRating": {
+      "type": "enumeration",
+      "enum": [
+        "ESRB: Rating Pending",
+        "ESRB: Early Childhood",
+        "ESRB: Everyone",
+        "ESRB: Everyone 10+",
+        "ESRB: Teen",
+        "ESRB: Mature",
+        "ESRB: Adults Only"
+      ],
+      "required": true
+    },
+    "pegiRating": {
+      "type": "enumeration",
+      "enum": [
+        "PEGI: 3",
+        "PEGI: 7",
+        "PEGI: 12",
+        "PEGI: 16",
+        "PEGI: 18"
+      ],
+      "required": true
+    },
+    "pressKit": {
+      "displayName": "Press Kit",
+      "type": "component",
+      "repeatable": false,
+      "component": "press.press-kit"
+    },
+    "genre": {
+      "type": "component",
+      "repeatable": true,
+      "component": "genre.genre"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

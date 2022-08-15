@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_press_press_kits",
+  "info": {
+    "displayName": "Press Kit",
+    "icon": "newspaper",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "videos": {
+      "displayName": "videos",
+      "type": "component",
+      "repeatable": true,
+      "component": "press.videos"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "art": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact": {
+      "displayName": "contact",
+      "type": "component",
+      "repeatable": true,
+      "component": "press.contact"
+    }
+  }
+}
